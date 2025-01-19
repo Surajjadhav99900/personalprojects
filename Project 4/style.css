@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_one{
+    background-image: url(images/developer.png);
+    min-height:1000px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.containerr{
+    color: beige;
+    text-align: center;
+    padding: 80px;
+    font-size: 25px;
+    font-style: unset;
+    font-family: "Kalnia Glaze", serif;
+}
+.black_box{
+    padding: 70px;
+    text-align: center;
+    font-size: 70px;
+    background-color: rgb(143, 118, 118) ;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+.cardone {
+    max-width: 320px;
+    height: 400px;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 3px 5px 5px rgb(143, 118, 118) 
+
+}
+.card_content{
+    padding: 20px;
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content h3{
+    margin-bottom: 10px;
+}
+.card_content p{
+    font-size: large;
+}
+.cardone:hover{
+    transform: scale(1.04);
+}
+.bottom_section{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.contact{
+    background-color: darkgrey;
+    min-height: 400px;
+}
+.about{
+    background-color: darkolivegreen;
+    min-height: 400px;
+}
+.contact,.about{
+    padding: 20px;
+    color: azure;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.about h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.contact p,.about p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: bisque;
+}
+@media (max-width:786){
+    .section_one{
+        min-height: 40vh;
+    }
+    .containerr{
+        padding: 5px 0;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 24px;
+    }
+    .black_box h2{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .bottom_section{
+        flex-direction: column;
+    }
+}
